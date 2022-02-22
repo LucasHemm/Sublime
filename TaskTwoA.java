@@ -2,7 +2,7 @@ public class TaskTwoA {
 	
 public static boolean happy = false;
 
-public static void main(String [] args) {
+public static void main(String  args[]) {
    if (iAmHappy())
    {
      System.out.println("I clap my hands");
