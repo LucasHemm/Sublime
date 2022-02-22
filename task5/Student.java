@@ -13,8 +13,7 @@ isFemale = tempIsFemale;
 datamatikerTeam = tempDatamatikerTeam;
 }
 
-
-
 public static void main(String args[]){
-	
+
+}
 }
