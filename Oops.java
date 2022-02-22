@@ -8,6 +8,7 @@
  * 
  */
 public class Oops {
+  static int smaller = 0;
   public static void main(String[] args) {
     int a = 7, b = 42;
     minimum(a,b);
@@ -18,9 +19,9 @@ public class Oops {
 
   public static int minimum(int a, int b) {
     if (a < b) {
-      int smaller = a;
+      smaller = a;
     } else if (a >= b) {
-      int smaller = b;
+      smaller = b;
     }
     return smaller;
   }
