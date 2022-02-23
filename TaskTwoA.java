@@ -25,6 +25,7 @@ public static boolean iAmHappy()
 }
 
 public static int returnSum(int a, int b){
+	System.out.println(a+b);
 	return a + b;
 
 }
