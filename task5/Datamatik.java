@@ -3,7 +3,7 @@ public class Datamatik{
 static Student[] studentArray = new Student[10];
 
 
-public static String findName( int tmpStudentNr) {
+public static String findName(int tmpStudentNr) {
 	int studentNr = tmpStudentNr;
 	System.out.println(studentArray[studentNr].name);
 	return studentArray[studentNr].name;
@@ -12,7 +12,7 @@ public static String findName( int tmpStudentNr) {
 public static int findNameString(Student[] tmpStudentArray, String tmpStudentName) {
 	Student[] myStudentArray = tmpStudentArray;
 	String myStudentName = tmpStudentName;
-	for(int i = 0; i < myStudentArray.length; i++) {
+	for(int i = 0; i < myStudentArray.length; i++){
 		if(myStudentArray[i].name == myStudentName){
 			System.out.println("Index number: " + i);
 			return i;
@@ -23,7 +23,7 @@ public static int findNameString(Student[] tmpStudentArray, String tmpStudentNam
 
 
 
-public static void main(String args[]){
+public static void main(String[] args){
 	studentArray[0] = new Student("Mikkel", 25, false, 2);
 	studentArray[1] = new Student("Mille", 27, true, 2);
 	studentArray[2] = new Student("Peter", 24, false, 2);
