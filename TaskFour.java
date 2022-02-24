@@ -6,7 +6,7 @@ public class TaskFour {
 	*/
 static int[] intArray = {5,10,20,5,50};
 static String[] stringArray = {"Hej","SuperMand","Computer","Bil","Bord"};
-boolean[] booleanArray = new boolean[5];
+boolean[] booleanArray = {false,true,false,true,true,false};
 
 public static int sum(int[] tmpIntArray) {
 	int sum = 0;
