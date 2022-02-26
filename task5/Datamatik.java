@@ -5,24 +5,21 @@ static Student[] studentArray = new Student[10];
 
 public static String findName(int tmpStudentNr) {
 	int studentNr = tmpStudentNr;
-	System.out.println(studentArray[studentNr].name);
-	return studentArray[studentNr].name;
+	System.out.println(studentArray[studentNr].getName());
+	return studentArray[studentNr].getName();
 }
 
 public static int findNameString(Student[] tmpStudentArray, String tmpStudentName) {
 	Student[] myStudentArray = tmpStudentArray;
 	String myStudentName = tmpStudentName;
 	for(int i = 0; i < myStudentArray.length; i++){
-		if(myStudentArray[i].name == myStudentName){
+		if(myStudentArray[i].getName() == myStudentName){
 			System.out.println("Index number: " + i);
 			return i;
 		}
 	}
 	return 1;
 }
-
-
-
 public static void main(String[] args){
 	studentArray[0] = new Student("Mikkel", 25, false, 2);
 	studentArray[1] = new Student("Mille", 27, true, 2);
@@ -34,9 +31,9 @@ public static void main(String[] args){
 	studentArray[7] = new Student("Nikolaj", 28, false, 2);
 	studentArray[8] = new Student("Alexander", 26, false, 2);
 	studentArray[9] = new Student("Nina", 32, true, 2);
-	//findName(4);
-	//findName(6);
-	//findName(0);
+	findName(4);
+	findName(6);
+	findName(0);
 	findNameString(studentArray, "Alexander");
 	findNameString(studentArray, "Sidsel");
 	findNameString(studentArray, "Nina");

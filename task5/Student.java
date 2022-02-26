@@ -1,9 +1,14 @@
 public class Student{
 
-String name;
+private String name;
 int age;
 boolean isFemale;
 int datamatikerTeam;
+
+
+public String getName(){
+	return name;
+}
 
 public Student(String tempName, int tempAge, boolean tempIsFemale, int tempDatamatikerTeam) {
 
