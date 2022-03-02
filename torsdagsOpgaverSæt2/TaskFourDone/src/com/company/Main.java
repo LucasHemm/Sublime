@@ -23,7 +23,7 @@ public class Main{
 
     public static void recursionInt(int tmpNum){
         int num = tmpNum;
-        while(checker == true){
+        while(checker){
             System.out.println(num);
             num -= 1;
             if(num == 0){
@@ -34,12 +34,24 @@ public class Main{
         }
     }
     //opgave 4.e
+    static public void fibunacci(int a, int b){
+        if(b < 10000) {
+            System.out.print(a + "\t"+ b + "\t");
+            a = a+b;
+            b = a + b;
+            fibunacci(a, b);
+        }
+        else{
+            System.out.println("done");
+        }
+    }
 
 
 
     public static void main(String[] args){
     //divideByParameter(3);
     //randomPrint();
-        recursionInt(10);
+        //recursionInt(10);
+        fibunacci(1,1);
     }
 }
