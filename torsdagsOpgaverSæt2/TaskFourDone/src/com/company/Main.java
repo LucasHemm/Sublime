@@ -49,8 +49,8 @@ public class Main{
 
 
     public static void main(String[] args){
-    //divideByParameter(3);
-    //randomPrint();
+        //divideByParameter(3);
+        //randomPrint();
         //recursionInt(10);
         fibunacci(1,1);
     }
